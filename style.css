@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Gridular";
+    src: url(./font/Gridular/Web/Gridular-Regular-Web/Gridular-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+section {
+  scroll-snap-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+/* video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+} */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+
+.logo-type {
+    font-family: "Gridular";
+    font-weight: 400;
+    line-height: .79;
+    margin-bottom: 5rem;
+    font-size: 14.5rem;
+    letter-spacing: -10px;
+}
+
+h1 {
+  font-size: 10rem;
+  margin-bottom: 5rem;
+  letter-spacing: -4px;
+  kerning: auto;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 400;
+  bottom: 150px;
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 6rem;
+}
+h2 span {
+  font-size: 3.25rem;
+  font-family: "Gridular";
+  letter-spacing: 5px;
+}
+
+small {
+  bottom: 75px;
+  position: absolute;
+}
+
+.logo {
+  min-height: 2rem;
+  width: 65vw;
+}
+.tag {
+  height: 2rem;
+  width: 15vw;
+  position: absolute;
+  top: 75px;
+}
+main {
+  scroll-snap-type: x mandatory;
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
